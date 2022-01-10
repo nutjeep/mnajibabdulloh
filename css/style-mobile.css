@@ -218,6 +218,18 @@
         width: 90px;
     }
 
+    body #popup {
+        width: 75%;
+        height: auto;
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s;
+    }
+
     .skill-section {
         width: 100%;
     }

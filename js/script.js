@@ -28,8 +28,19 @@ $('.scrolling-page').on('click', function(e) {
 
 // Image Lightbox
 function toggle(){
+    var blur = document.getElementById('hero');
+    blur.classList.toggle('blur-effect');
+    var blur = document.getElementById('about');
+    blur.classList.toggle('blur-effect');
     var blur = document.getElementById('education');
     blur.classList.toggle('blur-effect');
+    var blur = document.getElementById('skill');
+    blur.classList.toggle('blur-effect');
+    var blur = document.getElementById('contact');
+    blur.classList.toggle('blur-effect');
+    var blur = document.getElementById('svg');
+    blur.classList.toggle('blur-effect');
+    
     var popup = document.getElementById('popup');
     popup.classList.toggle('blur');
 }
