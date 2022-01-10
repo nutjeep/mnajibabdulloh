@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color1: #1E6F5C;
+    --color2: #289672;
+    --color3: #29BB89;
+    --color4: #C0E6BA;
+    --color5: #E6DD3B;
+
+    --font-color: #5a5a5a;
+    --font-color2: #727272;
+}
+
+/* Animation CSS */
+
+.animate__animated.animate__fadeInRight,
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 2s;
+}
+
+body {
+    overflow-x: hidden;
+    transition: .5s;
+}
+  
+body h3 {
+    font-size: 30px;
+    color: var(--color2);
+    font-weight: 500;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+body h4 {
+    font-size: 20px;
+    color: var(--color2);
+    font-weight: 500;
+}
+
+body p {
+    font-size: 15px;
+}
+
+body .row {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.about-section,
+.education-section,
+.skill-section,
+.contact-section {
+    margin: 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* NAVIGATION Section */
+nav {
+    width: 100%;
+    height: 95px;
+    padding-top: 15px;
+    padding-right: 65px;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    transition: .5s;
+}
+
+nav.stiky {
+    background-color: var(--color1);
+    color: var(--color4);
+    height: 65px;
+    padding-top: 5px;
+}
+
+nav.stiky ul {
+    justify-content: center;
+}
+
+nav.stiky a:hover {
+    color: var(--color5);
+}
+
+nav.nav-down {
+    background-color: var(--color1);
+}
+
+nav ul {
+    display: flex; 
+    justify-content: end;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color3);
+}
+nav ul li a:hover {
+    color: var(--color1);
+}
+
+/* Hamburger Menu */
+nav .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    opacity: 0;
+}
+
+nav .menu-toggle input {
+    position: absolute;
+    width: 44px;
+    height: 28px;
+    opacity: 0;
+    left: -8px;
+    top: -4px;
+    cursor: default;
+}
+
+nav.stiky .menu-toggle span {
+    background-color: var(--color3);
+}
+
+nav .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--color2);
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, 1px);    
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-2px, 0);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* HERO Section */
+.hero-section {
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+.hero-section h1 {
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.hero-section h2 {
+    color: var(--font-color2);
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.hero-section h2 .span {
+    color: var(--color4);
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: var(--color3);
+}
+
+.hero-section a:hover {
+    color: var(--color5);
+}
+
+.hero-section img {
+    width: 35vw;
+    height: auto;
+    filter: drop-shadow(-2px 2px 10px rgb(107, 107, 107));
+}
+
+.hero-section .hero-title {
+    margin-top: 30vh;
+}
+
+.hero-section .hero-sosmed {
+    display: flex;
+    justify-content: left;
+}
+
+.hero-section .hero-sosmed .sosmed {
+    position: relative;
+    background-color: #dadada;
+    border-radius: 50%;
+    transition: .5s;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.hero-section .hero-sosmed .sosmed:hover {
+    transition: .5s;
+    transform: translateY(-10px);
+    background-color: var(--color2);
+    filter: drop-shadow(0 5px 5px rgb(107, 107, 107));
+}
+
+.hero-section .hero-sosmed .sosmed:hover i {
+    color: white;
+    transition: .5s;
+}
+
+.hero-section .hero-sosmed .sosmed i {
+    color:var(--color1);
+    z-index: 2;
+    height: 30px;
+    width: auto;
+    transition: .5s;
+    font-size: 30px;
+    transform: translateY(30%);
+}
+
+/* ABOUT Section */
+.about-section, .skill-section {
+    background: var(--color4);
+}
+
+.about-section .about1 img {
+    height: 180px;
+    width: auto;
+    filter: drop-shadow(0 3px 10px rgb(141, 141, 141));
+}
+
+/* EDUCATION Section */
+.education-section h4 {
+    text-align: left;
+    margin-top: 25px;
+}
+
+
+.education-section .box {
+    width: 100%;
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--font-color2);
+}
+
+.education-section .box p {
+    color: white;
+}
+
+.education-section .box .school {
+    font-weight: 500;
+}
+
+.education-section .box .city {
+    font-weight: 400;
+}
+
+.education-section .box .year {
+    background-color: var(--color5); 
+    padding: 8px;
+    text-align: center;
+    color: var(--color1);
+    border-radius: 5px;
+    width: 110px;
+}
+
+.education-section .box-certificate button {
+    position: relative;
+    background: var(--color2);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    width: 110px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.education-section .box-certificate button:hover {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+body #popup {
+    width: 85%;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+body #popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+#education.blur-effect {
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup.blur {
+    top: 40%;
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+/* SKILL Section */
+.skill-section {
+    justify-content: center;
+}
+
+.skill-section .wrapper {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-section .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 180px;
+    height: 230px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.skill-section .percent {
+    font-size: 28px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(left, #289672, #E6DD3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-section .text {
+    font-size: 15px;
+}
+
+/* CONTACT Section */
+.contact-section {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.contact-section .box {
+    background-color: var(--color3);
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.3);
+}
+
+.contact-section .content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-section .sosmed {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-section i {
+    margin-right: 10px;
+    font-size: 20px;
+    width: 25px;
+}
+
+.contact-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.contact-section a:hover {
+    color: var(--color5);
+}
+
+.contact-section .g-map {
+    width: 90%;
+    height: auto;
+}
+
+.contact-section .g-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: var(--color2) 2px solid;
+}
+
+.contact-section .first-parent {
+    width: 60%;
+}
+
+.contact-section h4 {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.contact-section textarea {
+    width: 100%;
+    border: solid 1px var(--color3);
+}
+
+.contact-section button {
+    font-size: 15px;
+}
+
+.contact-section .btn-kirim {
+    color: white;
+    background-color: var(--color2);
+    border: none;
+}
+
+.contact-section .btn-kirim:hover {
+    color: white;
+    background-color: var(--color3);
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    margin-bottom: 0;
+    background-color: var(--color1);
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer i {
+    color: red;
+}

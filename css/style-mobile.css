@@ -1,0 +1,295 @@
+/* Landscape Mobile */
+@media (max-width: 767.98px) {
+    body h3 {
+        font-size: 20px;
+    }
+
+    body h4 {
+        font-size: 15px;
+    }
+
+    body p {
+        font-size: 10px;
+    }
+
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 15px;    
+    }
+
+    nav.stiky {
+        padding-top: 10px;
+    }
+    
+    .hero-section {
+        padding-top: 80px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-section .hero-title {
+       margin-top: 50px;
+    }
+    
+    .hero-section h1 {
+        font-size: 25px;
+    }
+
+    .hero-section h2 {
+        font-size: 15px;
+    }
+
+    .about-section .about1 img {
+        height: 90px;
+        width: auto;
+    }
+
+    .education-section .box {
+        width: 100%;
+    }
+
+    .contact-section .box {
+        width: 90%;
+    }
+}
+
+
+/* Potrait Mobile Version */
+@media (max-width: 575.98px) {
+    body .row {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    body h3 {
+        font-size: 5vw;
+    }
+
+    body h4 {
+        font-size: 4vw;
+    }
+
+    body p {
+        font-size: 3vw;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav ul {
+        position: absolute;
+        left: 0;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: var(--color1);
+        z-index: 1;
+        height: 50vh;
+        width: 40vw;
+        padding: 10px;
+        /* box-shadow: 0 3px 15px rgb(90, 90, 90); */
+        transform: translateX(-100%);
+        transition: all .5s;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+    
+    nav ul li a {
+        color: var(--color4);
+        font-size: 3vw;    
+    }
+
+    nav ul li a:hover {
+        color: white;    
+    }
+
+    nav .menu-toggle {
+        right: -13px;
+        bottom: -20px;
+        z-index: 2;
+        opacity: 1;
+    }
+
+    nav.stiky {
+        height: 60px;
+    }
+
+    nav.stiky .menu-toggle {
+        bottom: -12px;
+    }
+
+    .about-section,
+    .education-section,
+    .skill-section,
+    .contact-section {
+        margin: 0;
+    }
+
+    .hero-section {
+        padding-top: 10px;
+        min-height: 85vh;
+    }
+
+    .hero-section h1, h2 {
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 6vw;
+    }
+
+    .hero-section h2 {
+        font-size: 4vw;
+    }
+
+    .hero-section img {
+        margin-top: 70px;
+        width: 80%;
+        height: auto;
+    }
+
+    .hero-section .hero-title {
+        margin-top: 10px;
+    }
+
+    .hero-section .hero-sosmed {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .hero-section .hero-sosmed .sosmed {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+
+    .hero-section .hero-sosmed .sosmed i {
+        font-size: 20px;
+        transform: translateY(30%);
+    }
+
+    .about-section .about1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .about-section .about1 img {
+        height: 100px;
+        width: auto;
+    }
+
+    .about-section .about2 p {
+        text-align: center;
+    }
+
+    .education-section {
+        justify-items: center;
+    }
+    
+    .education-section h4 {
+        margin-top: 20px;
+    }
+
+    .education-section .box {
+        margin: 0;
+    }
+
+    .education-section .box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .education-section .box .year {
+        width: 35%;
+    }
+
+    .education-section .box-certificate button {
+        font-size: 2.5vw;
+        width: 90px;
+    }
+
+    .skill-section {
+        width: 100%;
+    }
+
+    .skill-section .wrapper {
+        width: 100%;
+    }
+
+    .skill-section .card {
+        width: 100px;
+        height: 150px;
+    }
+
+    .skill-section .percent {
+        font-size: 28px;
+    }
+
+    .skill-section .text {
+        font-size: 3vw;
+    }
+
+    .contact-section {
+        margin-bottom: 25px;
+    }
+
+    .contact-section .box {
+        flex-direction: column;
+        width: 90%;
+        padding: 13px;
+        border-radius: 5px;
+    }
+
+    .contact-section .box
+    .sosmed {
+        display: flex;
+        justify-content: start;
+    }
+
+    .contact-section .content {
+        width: 100%;
+    }
+
+    .contact-section i {
+        width: 20px;
+    }
+
+    .contact-section .g-map {
+        width: 100%;
+        height: auto;
+        border-radius:5px;
+        background-color: red;
+    }
+    
+    .contact-section .g-map iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: var(--color2) 2px solid;
+    }
+
+    .contact-section .first-parent {
+        width: 100%;
+    }
+
+    .contact-section button, label, .alert {
+        font-size: 3vw;
+    } 
+
+    footer {
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+}
