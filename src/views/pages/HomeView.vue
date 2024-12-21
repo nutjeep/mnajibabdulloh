@@ -34,10 +34,10 @@
           <h3 class="font-chakra text-center uppercase mb-5">Languages</h3>
           <div class="flex justify-center gap-5">
             <span class="bg-white p-4 rounded-3xl flex justify-center items-center h-20 w-20">
-              <img src="../../assets/images/js.png" alt="Javascript">
+              <img src="../../assets/images/js.webp" alt="Javascript">
             </span>
             <span class="bg-white p-4 rounded-3xl flex justify-center items-center h-20 w-20">
-              <img src="../../assets/images/php.png" alt="PHP">
+              <img src="../../assets/images/php.webp" alt="PHP">
             </span>
           </div>
         </div>
@@ -45,10 +45,10 @@
           <h3 class="font-chakra text-center uppercase mb-5">Frameworks</h3>
           <div class="flex justify-center gap-5">
             <span class="bg-white p-4 rounded-3xl flex justify-center items-center h-20 w-20">
-              <img src="../../assets/images/laravel.png" alt="Laravel">
+              <img src="../../assets/images/laravel.webp" alt="Laravel">
             </span>
             <span class="bg-white p-4 rounded-3xl flex justify-center items-center h-20 w-20">
-              <img src="../../assets/images/vuejs.png" alt="Vuejs">
+              <img src="../../assets/images/vuejs.webp" alt="Vuejs">
             </span>
           </div>
         </div>
@@ -56,10 +56,10 @@
           <h3 class="font-chakra text-center uppercase mb-5">Databases</h3>
           <div class="flex justify-center gap-5">
             <span class="bg-white p-4 rounded-3xl flex justify-center items-center h-20 w-20">
-              <img src="../../assets/images/mysql.png" alt="MySql">
+              <img src="../../assets/images/mysql.webp" alt="MySql">
             </span>
             <span class="bg-white p-4 rounded-3xl flex justify-center items-center h-20 w-20">
-              <img src="../../assets/images/pgsql.png" alt="PostgreSql">
+              <img src="../../assets/images/pgsql.webp" alt="PostgreSql">
             </span>
           </div>
         </div>
